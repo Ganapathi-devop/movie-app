@@ -1,0 +1,46 @@
+.container{
+    width:fit-content;
+    height: fit-content;
+    background-color: #000;
+    border-radius: 2%;
+    border: 1px solid #f1f1f1;
+    color: #f1f1f1;
+    padding: .5%;
+}
+
+.title-poster{
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.5fr 1fr; 
+    grid-template-areas: 
+      "."
+      ".";
+      gap: 1% 0px;
+    position: relative;
+    top: -13px;
+}
+.titleBg{
+    background-color: #000;   
+    color: #f1f1f1;
+}
+.title-hover-div{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    color: yellow;
+    z-index: 1;
+    margin: 1%;
+}
+#poster-img{
+    max-width: 300px;
+    max-height: 300px;
+}
+.hide{
+    visibility: hidden;
+}
+.movie-title{
+    display: inline;
+}

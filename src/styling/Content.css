@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+.container-content{
+    background-color: #000;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.3fr 1.5fr; 
+    grid-template-areas: 
+      "."
+      "."; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+.movies-content{
+    
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 2% 2%; 
+    grid-template-areas: 
+      ". . ."
+      ". . ."; 
+    justify-content: center; 
+    align-content: center; 
+    justify-items: center; 
+    align-items: center; 
+}
+.search-content{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: #F8E76c;
+    margin: 1%;
+}
+#search-input{
+    margin: 1%;
+    border-radius: 10px;
+    border: none;
+    padding: .3%;
+    color: #F8E76c;
+    font-size: larger;
+    text-align: center;
+    background-color: #272727;
+    font-family: 'Permanent Marker', cursive;
+}
+#search-input:-internal-autofill-selected{
+    color: #F8E76c;
+    background-color: #787272;
+}
+#search-icon{
+    color: #f0f0f0;
+    font-size: 2rem;
+}
+#search-icon:hover{
+    color: #e4f;
+    padding: .1%;
+    cursor: pointer;
+}
