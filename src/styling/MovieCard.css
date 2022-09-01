@@ -35,12 +35,14 @@
     margin: 1%;
 }
 #poster-img{
+    width: 100%;
     max-width: 300px;
     max-height: 300px;
 }
 .hide{
     visibility: hidden;
 }
-.movie-title{
-    display: inline;
+.poster{
+    width: fit-content;
+    max-width: 300px;
 }

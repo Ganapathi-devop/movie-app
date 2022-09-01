@@ -1,27 +1,11 @@
-import React, { useState} from "react";
-import { useEffect, useRef } from "react";
+import React, { useState } from "react";
 import "../styling/MovieCard.css";
 
-function MovieCard({movie}) {
+function MovieCard({movie,}) {
   const [isOnHover, setOnHover] = useState("hide");
-  const [width, setWidth] = useState(150);
-
-  const ref = useRef(null);
-  const ref1= ()=>{
-    var h4Width = ref.current.offsetWidth;
-    console.log(h4Width)
-    setWidth( h4Width);
-    console.log(width)
-  }
   
-
-  useEffect(() => {
-    ref1()
-  }, []);
-  
-
   return (
-    <div ref={ref}
+    <div 
       className="container"
       onMouseOver={() => {
         setOnHover("");
@@ -45,7 +29,7 @@ function MovieCard({movie}) {
             <p className="movie-type">{movie.Type}</p>
             <p className="movie-year">{movie.Year}</p>
           </div>
-          <h4 className="movie-title" style={{width: `${width}px`}}>{movie.Title}</h4>
+          <h4 className="movie-title" >{movie.Title}  </h4>
         </div>
       </div>
     </div>
@@ -53,3 +37,27 @@ function MovieCard({movie}) {
 }
 
 export default MovieCard;
+
+
+
+
+
+//
+  // const [widthState, setWidhState] = useState(0);
+
+  // const ref = useRef(null);
+  // const ref1= ()=>{
+  //   var h4Width = ref.current.offsetWidth;
+  //   console.log(h4Width + " :ref")
+    
+
+  // }
+
+  // const h4Style = {
+  //   width: `${ref1()}`
+  // }
+  // console.log(h4Style.width)
+
+  // useEffect(() => {
+  //   ref1()
+  // });
