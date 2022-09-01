@@ -1,6 +1,5 @@
 .App {
   height: 100vh;
-  overflow-y: scroll;
   display: grid; 
   grid-auto-columns: 1fr; 
   grid-template-columns: 1fr; 
