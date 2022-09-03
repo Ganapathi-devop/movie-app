@@ -14,9 +14,9 @@ function Content() {
     console.log(data.Search);
   };
   useEffect(() => {
-    receivingData("spiderman");
+    receivingData("spider-man");
   }, []);
-  
+
   return (
     <>
       <div className="container-content">
@@ -38,11 +38,13 @@ function Content() {
             search
           </span>
         </div>
-              <br/>
-        <div className="movies-content">
-          {movies.map((movie) => (
-            <MovieCard movie={movie} />
-          ))}
+        <br />
+        <div className="movies">
+          <div className="movies-content">
+            {movies.map((movie) => (
+              <MovieCard movie={movie} />
+            ))}
+          </div>
         </div>
       </div>
     </>
